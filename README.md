@@ -6,7 +6,6 @@ VoxImplant onMessageReceived bug sample project
 
         VoxEngine.addEventListener(AppEvents.CallAlerting, (e) => {
           e.call.addEventListener(CallEvents.Connected, handleCallConnected);
-          e.call.addEventListener(CallEvents.RecordStarted, handleRecordStarted);
           e.call.addEventListener(CallEvents.Failed, VoxEngine.terminate);
           e.call.addEventListener(CallEvents.Disconnected, VoxEngine.terminate);
           e.call.answer();
